@@ -1,0 +1,22 @@
+.highlights {
+  ul {
+    margin-top: 24px;
+    li {
+      display: inline-block;
+      margin: 0 8px 16px 0;
+      width: 290px;
+
+      .title {
+        font-weight: bold;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      img {
+        max-width: 290px;
+        cursor: pointer;
+      }
+    }
+  }
+}

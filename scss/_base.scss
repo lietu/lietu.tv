@@ -1,0 +1,48 @@
+html, body {
+  font-family: 'Roboto', "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: $text;
+  background-color: $body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: $heading;
+  text-shadow: -1px 2px 0 lighten($heading, 10%), -4px 4px 0 darken($heading, 15%);
+}
+
+a, a:visited, a:active {
+  color: #a37272;
+}
+
+h2 {
+  padding: 1rem 0 0 0;
+  font-size: 3rem;
+}
+
+p {
+  padding: 16px 0;
+}
+
+p, li, a {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+
+.content {
+  @include linear-gradient(to bottom, $background 0%, lighten($background, 2%) 100%);
+  border: 1px solid $border;
+  padding: 0 16px 64px 16px;
+  max-width: 896px;
+  margin: 32px auto 16px auto;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.95);
+}
+
+section {
+}
+
+@media screen and (max-width: 962px){
+  .content {
+    max-width: 610px;
+  }
+}

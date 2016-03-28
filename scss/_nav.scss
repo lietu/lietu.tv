@@ -1,0 +1,31 @@
+nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid lighten(#393939, 7%);
+  background: #393939;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.7);
+
+  padding: 8px 0;
+  text-align: center;
+
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      font-size: 1.3rem;
+      margin: 0 8px;
+
+      a, a:visited, a:active {
+        text-decoration: none;
+        color: #eee;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 610px){
+  nav {
+    position: relative;
+
+  }
+}

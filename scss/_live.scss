@@ -1,0 +1,62 @@
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.live {
+  overflow: hidden;
+
+  max-height: 1000px;
+  transition: max-height 500ms;
+
+  h2 i {
+    animation: flash linear 1250ms infinite;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .live-preview {
+    border: 1px solid $border;
+    display: inline-block;
+    width: auto;
+    padding: 16px;
+    margin: 16px 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  img {
+    width: 640px;
+    height: 360px;
+    max-width: 100%;
+  }
+
+  &.hidden {
+    max-height: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .live {
+    img {
+      height: auto;
+    }
+  }
+}

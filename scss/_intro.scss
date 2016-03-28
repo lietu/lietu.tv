@@ -1,0 +1,12 @@
+.intro {
+  iframe {
+    width: 100%;
+    height: 504px;
+  }
+}
+
+@media screen and (max-width: 962px){
+  .intro iframe {
+    height: 342px;
+  }
+}

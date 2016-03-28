@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "noExternalResolve": true,
+    "declarationFiles": false,
+    "outFile": "dst/main.js",
+    "target": "es5",
+    "module": "system"
+  }
+}

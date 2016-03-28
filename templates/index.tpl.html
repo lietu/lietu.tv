@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lietu</title>
+    <meta name="description"
+          content="Lietu - A variety broadcaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css"/>
+    <script type="text/javascript" src="rivets.bundled.min.js"></script>
+</head>
+<body>
+@@include('_nav.html')
+@@include('_popup.html')
+@@include('_header.html')
+
+<div class="content">
+    @@include('_live.html')
+    @@include('_description.html')
+    @@include('_schedule.html')
+    @@include('_intro.html')
+    @@include('_links.html')
+    @@include('_highlights.html')
+    @@include('_thanks.html')
+</div>
+@@include('_footer.html')
+
+<script type="text/javascript" src="script.js"></script>
+@@include('_analytics.html')
+</body>
+</html>

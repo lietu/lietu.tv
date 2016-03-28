@@ -1,0 +1,8 @@
+footer {
+  font-size: 0.8rem;
+  border-top: 1px solid $border;
+  text-align: center;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.95);
+
+  @include linear-gradient(to bottom, lighten(#330c0c, 3%) 0%, darken(#330c0c, 0%) 100%);
+}

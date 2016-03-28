@@ -1,0 +1,20 @@
+<section class="highlights">
+    <a name="Highlights"></a>
+
+    <h2>Highlights</h2>
+
+    <p>Here are some of the latest highlights from the stream.</p>
+
+    <ul>
+        <li rv-each-highlight="highlights" rv-title="highlight.description">
+            <div class="title">{highlight.title}</div>
+            <a rv-on-click="highlight.show">
+                <img rv-src="highlight.preview"/>
+            </a>
+        </li>
+    </ul>
+
+    <p>
+        <a href="https://www.twitch.tv/lietu/profile/highlights">More highlights on my Twitch profile.</a>
+    </p>
+</section>

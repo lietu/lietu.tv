@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "st": "^1.1.0",
+    "tsify": "^0.13.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
