@@ -1,7 +1,7 @@
 $heading: #681d1d;
 $body: #252525;
 $background: #330c0c;
-$text: lighten(#636363, 10%);
+$text: lighten(#636363, 25%);
 $border: lighten($background, 6%);
 
 @import "./mixins";
