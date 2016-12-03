@@ -1,5 +1,9 @@
 import {config} from "./config";
 
+const TWITCH_API_HEADERS = {
+    "Client-ID": config.clientId
+};
+
 interface Highlight {
     title: string;
     description: string;
@@ -72,7 +76,7 @@ export class Website {
 
         _this.log("Loading highlights");
 
-        this.getUrl(url, function (req) {
+        this.getUrl(url, TWITCH_API_HEADERS, function (req) {
             if (req.status !== 200) {
                 return;
             }
@@ -107,7 +111,7 @@ export class Website {
         let _this = this;
         let url = `https://api.twitch.tv/kraken/streams/${this.channel}`;
 
-        this.getUrl(url, function(req) {
+        this.getUrl(url, TWITCH_API_HEADERS, function (req) {
             if (req.status !== 200) {
                 return;
             }
@@ -124,7 +128,7 @@ export class Website {
         });
     }
 
-    private getUrl(url: string, callback: (req: XMLHttpRequest) => void) {
+    private getUrl(url: string, headers: Object, callback: (req: XMLHttpRequest) => void) {
         let STATES = {
             0: "UNSENT",
             1: "OPENED",
@@ -144,6 +148,9 @@ export class Website {
         };
 
         req.open('GET', url, true);
+        for (var key in headers) {
+            req.setRequestHeader(key, (<any>headers)[key]);
+        }
         req.send();
     }
 
