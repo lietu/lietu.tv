@@ -117,6 +117,10 @@ gulp.task('server', function (done) {
     console.log("Listening to http://localhost:8080/");
 });
 
+gulp.task('build', ['lib', 'img', 'typescript', 'fileinclude', 'sass'], function () {
+
+});
+
 gulp.task('default', ['lib', 'img', 'typescript', 'fileinclude', 'sass', 'server', 'watch'], function () {
 
 });
